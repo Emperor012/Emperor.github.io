@@ -7,42 +7,113 @@
     <title>Document</title>
 
     <style>
+      /*-------------------------Common---------------------------*/
       body {
         margin: 0;
-        float: left;
+      }
+
+      .example {
+        display: flex;
+        color: white;
+        text-align: center;
+      }
+
+      .ex-2,.ex-3,.ex-4 {
+        margin-top: 20px;
       }
 
       .red {
-        width: 60%;
-        height: 400px;
         background-color: red;
       }
 
-      .blank {
-        width: 15px;
-        height: 400px;
-      }
-
-      .two-color{
-        width: 40%;
-      }
-
       .green {
-        height: 200px;
         background-color: green;
       }
 
       .blue {
-        height: 200px;
         background-color: blue;
       }
+      /*-------------------------Common---------------------------*/
+
+      /*-------------------------Bai-tap-1---------------------------*/
+      .ex-1 .red {
+        width: 60%;
+        height: 400px;
+      }
+
+      .ex-1 .two-color {
+        width: 40%;
+      }
+
+      .ex-1 .green ,.ex-1 .blue  {
+        height: 200px;
+      }
+      /*-------------------------Bai-tap-1---------------------------*/
+
+      /*-------------------------Bai-tap-2---------------------------*/
+      .ex-2 .red {
+        width: 60%;
+        height: 400px;
+      }
+
+      .ex-2 .two-color {
+        width: 40%;
+      }
+
+      .ex-2 .green ,.ex-2 .blue {
+        height: 200px;
+        margin-left: 15px;
+      }
+      /*-------------------------Bai-tap-2---------------------------*/
+
+      /*-------------------------Bai-tap-3---------------------------*/
+      .ex-3 .red , .ex-3 .green , .ex-3 .blue{
+        width: 33%;
+        height: 400px;
+      }
+      /*-------------------------Bai-tap-3---------------------------*/
+
+      /*-------------------------Bai-tap-4---------------------------*/
+      .ex-4 .red {
+        width: 33%;
+        height: 400px;
+      }
+
+      .ex-4 .green ,.ex-4 .blue {
+        width: 33%;
+        height: 400px;
+        margin-left: 15px;
+      }
+      /*-------------------------Bai-tap-4---------------------------*/
     </style>
   </head>
   <body>
-    <div class="red">Height 400px</div>
-    <div class="two-color">
-      <div class="green">Height 200px</div>
-      <div class="blue">Height 200px</div>
+    <div class="example ex-1">
+      <div class="red">Height 400px</div>
+      <div class="two-color">
+        <div class="green">Height 200px</div>
+        <div class="blue">Height 200px</div>
+      </div>
+    </div>
+
+    <div class="example ex-2">
+      <div class="red">Height 400px</div>
+      <div class="two-color">
+        <div class="green">Height 200px</div>
+        <div class="blue">Height 200px</div>
+      </div>
+    </div>
+
+    <div class="example ex-3">
+      <div class="red">Height 400px</div>
+      <div class="green">Height 400px</div>
+      <div class="blue">Height 400px</div>
+    </div>
+
+    <div class="example ex-4">
+      <div class="red">Height 400px</div>
+      <div class="green">Height 400px</div>
+      <div class="blue">Height 400px</div>
     </div>
   </body>
 </html>
