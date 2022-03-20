@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /*--------------------header----------------------*/
+      .banner-container {
+        background: #b80010;
+      }
+
+      .card-banner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .card-banner a {
+        display: block;
+        max-width: 100%;
+      }
+
+      .card-banner a img {
+        display: block;
+      }
+
+      .header-menu {
+        max-width: 1200px;
+        margin: auto;
+        background: white;
+        margin: 0 auto;
+      }
+
+      .header-menu ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header-menu ul li a {
+        display: block;
+        font-size: 12px;
+        padding: 10px 17px;
+        color: #0f1568;
+      }
+
+      /*--------------------header----------------------*/
+
+      /*--------------------content----------------------*/
+      .content {
+        margin-top: 20px;
+        background: rgb(111, 202, 229);
+      }
+
+      .banner-slider {
+        max-width: 1200px;
+        height: 344px;
+        margin: auto;
+        display: flex;
+        position: relative;
+      }
+
+      /*--------------------Menu 2 cấp----------------------*/
+
+      .category-menu {
+        width: 212px;
+        height: 344px;
+        background-color: white;
+      }
+
+      .main-category {
+        font-size: 13px;
+        line-height: 28px;
+      }
+
+      .main-category > li {
+        position: relative;
+      }
+
+      .main-category li a {
+        color: #757575;
+        display: block;
+        padding: 0 12px;
+      }
+
+      .main-category li a .material-icons{
+        position: absolute;
+        top:2px;
+        right: 1px;
+        color: white;
+      }
+
+      .sub-category {
+        width: 212px;
+        height: 344px;
+        background-color: white;
+        position: absolute;
+        left: 212px;
+        z-index: 99;
+        visibility: hidden;
+      }
+
+      .sub-menu-1{
+        top: 0;
+      }
+
+      .sub-menu-2{
+        top: -28px;
+      }
+
+      .sub-menu-3{
+        top: -56px;
+      }
+
+      .sub-menu-4{
+        top: -84px;
+      }
+      .sub-category li a {
+        color: #757575;
+        display: block;
+      }
+
+      .main-category > li:hover > a {
+        background-color: #eceff1;
+        color: #f36d00;
+        top: 0;
+        left: 212px;
+      }
+      
+      .main-category > li:hover .sub-category {
+        visibility: visible;
+        border: 1px solid #eceff1;
+      }
+
+      .main-category > li:hover .material-icons {
+        color: #f36d00;
+      }
+
+      .sub-category > li:hover > a {
+        background-color: #eceff1;
+        color: #f36d00;
+      }
+
+      /*--------------------Menu 2 cấp----------------------*/
+
+      .slider-promo {
+        position: absolute;
+        top: 0;
+        left: 212px;
+      }
+
+      .slider-promo a {
+        display: block;
+      }
+
+      .slider-promo > a > img {
+        max-width: 988px;
+        height: 344px;
+      }
+
+      /*--------------------content----------------------*/
+
+      /*--------------------footer----------------------*/
+      footer {
+        background-color: #f4f4f6;
+      }
+
+      .footer-info {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+      }
+
+      .info-contact {
+        max-width: 25%;
+        margin: 20px 0;
+      }
+
+      .info-title {
+        font-size: 14px;
+        line-height: 16px;
+        color: #606060;
+        padding: 0px 10px;
+      }
+
+      .info-detail {
+        font-size: 13px;
+        color: #606060;
+        padding: 0px 10px;
+      }
+
+      /*--------------------footer----------------------*/
+    </style>
+    <title>LAZADA Vietnam</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner-container">
+        <div class="card-banner">
+          <a href="#">
+            <img src="img/card-banner-slider.jpg" alt="card-banner" />
+          </a>
+        </div>
+      </div>
+
+      <div class="header-menu">
+        <ul>
+          <li>
+            <a href="#">TIẾT KIỆM HƠN VỚI ỨNG DỤNG</a>
+          </li>
+          <li>
+            <a href="#">BÁN HÀNG CÙNG LAZADA</a>
+          </li>
+          <li>
+            <a href="#">CHĂM SÓC KHÁCH HÀNG</a>
+          </li>
+          <li>
+            <a href="#">KIỂM TRA ĐƠN HÀNG</a>
+          </li>
+          <li>
+            <a href="#">ĐĂNG NHẬP </a>
+          </li>
+          <li>
+            <a href="#">ĐĂNG KÝ</a>
+          </li>
+          <li>
+            <a href="#">CHANGE LANGUAGE</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="banner-slider">
+        <div class="category-menu">
+          <ul class="main-category">
+            <li>
+              <a href="#">Thiết Bị Điện Tử<i class="material-icons">chevron_right</i></a>
+
+              <ul class="sub-category sub-menu-1">
+                <li><a href="">Điện thoại di động</a></li>
+                <li><a href="">Máy tính bảng</a></li>
+                <li><a href="">Laptop</a></li>
+                <li><a href="">Máy tính để bàn</a></li>
+                <li><a href="">Âm thanh</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Phụ Kiện Điện Tử<i class="material-icons">chevron_right</i></a>
+              <ul class="sub-category sub-menu-2">
+                <li><a href="">Phụ kiện di động</a></li>
+                <li><a href="">Thiết bị thông minh</a></li>
+                <li><a href="">Thiết bị số</a></li>
+                <li><a href="">Phụ kiện máy ảnh</a></li>
+                <li><a href="">Phụ kiện máy bay camera</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">TV & Thiết Bị Điện Gia Dụng<i class="material-icons">chevron_right</i></a>
+              <ul class="sub-category sub-menu-3">
+                <li><a href="">Tivi & Video</a></li>
+                <li><a href="">Điện gia dụng nhỏ</a></li>
+                <li><a href="">Điện gia dụng lớn</a></li>
+                <li><a href="">Phụ kiện Tivi</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Sức Khỏe & Làm Đẹp<i class="material-icons">chevron_right</i></a>
+              <ul class="sub-category sub-menu-4">
+                <li><a href="">Chăm sóc da</a></li>
+                <li><a href="">Trang điểm</a></li>
+                <li><a href="">Dụng cụ làm đẹp</a></li>
+                <li><a href="">Chăm sóc cơ thể</a></li>
+                <li><a href="">Chăm sóc tóc</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Hàng Mẹ, Bé & Đồ Chơi</a>
+            </li>
+            <li>
+              <a href="#">Siêu Thị Tạp Hóa</a>
+            </li>
+            <li>
+              <a href="#">Hàng Gia dụng & Đời sống</a>
+            </li>
+            <li>
+              <a href="#">Thời Trang Nữ</a>
+            </li>
+            <li>
+              <a href="#">Thời Trang Nam</a>
+            </li>
+            <li>
+              <a href="#">Phụ Kiện Thời Trang</a>
+            </li>
+            <li>
+              <a href="#">Thể Thao & Du Lịch</a>
+            </li>
+            <li>
+              <a href="#">Ôtô, Xe Máy & Thiết Bị Định Vị</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slider-promo">
+          <a href="#"><img src="img/card-banner.jpg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-info">
+        <div class="info-contact">
+          <p class="info-title">
+            LAZADA - NỀN TẢNG MUA SẮM TRỰC TUYẾN HÀNG ĐẦU VIỆT NAM
+          </p>
+          <p class="info-detail">
+            Thành lập từ năm 2012, Lazada là nền tảng thương mại điện tử hàng
+            đầu Đông Nam Á, tiên phong thúc đẩy sự phát triển tại khu vực thông
+            qua Thương mại & Công nghệ. Hiện nay, với nền tảng logistics và hệ
+            thống thanh toán lớn nhất khu vực, Lazada trở thành một phần trong
+            đời sống của người tiêu dùng và hướng đến mục tiêu phục vụ cho 300
+            triệu khách hàng trên toàn khu vực Đông Nam Á vào năm 2030.
+          </p>
+          <p class="info-detail">
+            Tại Việt Nam, Lazada là nền tảng Thương mại điện tử quen thuộc của
+            hàng triệu người tiêu dùng bởi sự đa dạng hàng đầu về chủng loại sản
+            phẩm, ứng dụng công nghệ mua sắm và giải trí thông minh cùng khả
+            năng logistics
+          </p>
+        </div>
+        <div class="info-contact">
+          <p class="info-detail">
+            mạnh mẽ và dịch vụ chăm sóc khách hàng tối ưu. Đáng chú ý, bên cạnh
+            các chương trình ưu đãi trực tuyến hấp dẫn hàng tháng hấp dẫn thường
+            xuyên, Lazada Việt Nam còn thu hút người dùng với các Lễ Hội Mua Sắm
+            siêu lớn trong năm, đây được xem là các thời điểm mua sắm không thể
+            bỏ lỡ của các tín đồ mua sắm trên toàn quốc.
+          </p>
+          <p class="info-detail">
+            Hãy truy cập website hoặc tải ngay ứng dụng Lazada để gia tăng thêm
+            nhiều trải nghiệm độc đáo cho hành trình mua sắm – giải trí tuyệt
+            vời và siêu tiết kiệm ngay hôm nay!
+          </p>
+          <p class="info-title">SẢN PHẨM CHÍNH HÃNG</p>
+          <p class="info-detail">
+            Samsung , Apple , Xiaomi , Bluestone ,L’oreal , Maybeline , Enfa ,
+            Bobby ,Huggies , Adidas , Casio , Mediamart ,Juno , Gumac
+          </p>
+        </div>
+        <div class="info-contact">
+          <p class="info-title">SẢN PHẨM NỔI BẬT</p>
+          <p class="info-detail">SMARTPHONE</p>
+          <p class="info-detail">
+            iPhone , Samsung , Xiaomi , Vivo , Vsmart , Oppo , Huawei , iPhone
+            12 , iPhone 11 , Redmi Note 8 , Galaxy Note , Galaxy A51 , Galaxy
+            S21 Ultra , Vsmart Live 4 , Vsmart Joy 3
+          </p>
+          <p class="info-detail">MÁY TÍNH BẢNG</p>
+          <p class="info-detail">
+            iPad , Samsung , Huawei , Lenovo , Kindle , iPad Pro , iPad mini ,
+            Masstel , iPad Air 2 , iPad Mini 5 , LAPTOPS , Dell , Asus , Macbook
+            , HP , Lenovo , Acer , MSI , Microsoft Surface , Macbook Pro ,
+            Macbook Air 2018
+          </p>
+          <p class="info-detail">TIVI</p>
+          <p class="info-detail">
+            Sony , LG , Vsmart , Xiaomi , Toshiba , Samsung , Panasonic , Sharp
+            , Asanzo , Asano , TCL
+          </p>
+        </div>
+        <div class="info-contact">
+          <p class="info-detail">MÁY ẢNH</p>
+          <p class="info-detail">
+            Fujifilm , Nikon , Canon , Sony , Camcorder , GoPro , Flycam ,
+            Xiaomi
+          </p>
+          <p class="info-detail">MÁY GIẶT</p>
+          <p class="info-detail">
+            Electrolux , Sanyo , Toshiba , Aqua , Hitachi , Panasonic , Samsung
+            , LG , Bosch , Midea
+          </p>
+          <p class="info-detail">LÒ VI SÓNG</p>
+          <p class="info-detail">
+            Sharp , Electrolux , Bluestone , Samsung , Xiaomi , Beko , Panasonic
+          </p>
+          <p class="info-detail">Ô TÔ XE MÁY</p>
+          <p class="info-detail">
+            Honda , Xe máy Yamaha , Taya Motor , Suzuki , Piaggio , Xe Máy Điện
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
