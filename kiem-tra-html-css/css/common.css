@@ -30,6 +30,7 @@ ul {
 
 .creatures-list {
   display: flex;
+  flex-wrap: wrap;
   border-left: 1px solid #f1f1f1;
   border-top: 1px solid #f1f1f1;
   margin: 0 20px;
@@ -40,7 +41,32 @@ ul {
   height: auto;
   border-right: 1px solid #f1f1f1;
   border-bottom: 1px solid #f1f1f1;
+  border-left: 1px solid #f1f1f1;
   justify-content: center;
+}
+
+.ct-1{
+  height: 300px;
+}
+
+.ct-2{
+  height: 400px;
+}
+
+.ct-3{
+  height: 350px;
+}
+
+.ct-4{
+  height: 300px;
+}
+
+.ct-5{
+  height: 310px;
+}
+
+.ct-6{
+  height: 330px;
 }
 
 .creature a img {
@@ -116,6 +142,25 @@ ul {
 
 .creature-parameter{
     width: 40%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .creature {
+    width: 100%;
+  }
+
+  .creature-info {
+    display:block;
+  }
+  
+  .creature-description{
+    width: 100%;
+  }
+  
+  .creature-parameter{
+    width: 100%;
+  }
 }
 
 .parameter-title{
